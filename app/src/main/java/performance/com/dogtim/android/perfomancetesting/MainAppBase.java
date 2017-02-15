@@ -3,8 +3,13 @@ package performance.com.dogtim.android.perfomancetesting;
 import android.app.Application;
 
 import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
 
-public class MainApp extends Application {
+public abstract class MainAppBase extends Application {
+
+    private RefWatcher refWatcher;
+
+    protected abstract RefWatcher installLeakCanary();
 
     @Override
     public void onCreate() {
@@ -14,7 +19,7 @@ public class MainApp extends Application {
             // You should not init your app in this process.
             return;
         }
-        LeakCanary.install(this);
+        refWatcher = installLeakCanary();
     }
 
 }
