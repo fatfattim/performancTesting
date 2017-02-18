@@ -10,4 +10,8 @@ public class IntentHelper {
         context.startActivity(intent);
     }
 
+    public static void goToLeakObject(final Context context) {
+        Intent intent = new Intent(context, LeakObjectActivity.class);
+        context.startActivity(intent);
+    }
 }

@@ -29,6 +29,10 @@
             android:label="Leak Activity"
             />
 
+        <activity
+            android:name=".LeakObjectActivity"
+            android:label="Leak Object"
+            />
     </application>
 
 </manifest>

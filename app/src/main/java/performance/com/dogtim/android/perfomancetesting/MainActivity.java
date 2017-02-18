@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-
+            IntentHelper.goToLeakObject(this);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

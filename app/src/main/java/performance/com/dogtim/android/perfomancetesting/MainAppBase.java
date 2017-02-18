@@ -7,7 +7,7 @@ import com.squareup.leakcanary.RefWatcher;
 
 public abstract class MainAppBase extends Application {
 
-    private RefWatcher refWatcher;
+    private static RefWatcher refWatcher;
 
     protected abstract RefWatcher installLeakCanary();
 
@@ -22,4 +22,7 @@ public abstract class MainAppBase extends Application {
         refWatcher = installLeakCanary();
     }
 
+    public static RefWatcher getRefWatcher() {
+        return refWatcher;
+    }
 }

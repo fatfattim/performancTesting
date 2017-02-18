@@ -10,13 +10,13 @@ import okhttp3.RequestBody;
 
 public class LeakSender {
     OkHttpClient client;
-    private String slackUrl;
+    private String slackUrl = "https://hooks.slack.com/services/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";
     public LeakSender() {
         client = new OkHttpClient();
     }
 
     public void send(String message) {
-        String content = "{ \"username\":\"webhookbot\", " +
+        String content = "{ \"username\":\"deadpool\", " +
                 "\"text\":\"" + message + "\", " +
                 "\"channel\":\"#leak_demo\" }";
 
