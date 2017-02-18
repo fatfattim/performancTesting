@@ -1,4 +1,4 @@
-package performance.com.dogtim.android.perfomancetesting;
+package performance.com.dogtim;
 
 
 import java.io.IOException;

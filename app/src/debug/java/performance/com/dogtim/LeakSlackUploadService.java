@@ -1,4 +1,4 @@
-package performance.com.dogtim.android.perfomancetesting;
+package performance.com.dogtim;
 
 import com.squareup.leakcanary.AnalysisResult;
 import com.squareup.leakcanary.DisplayLeakService;
