@@ -82,16 +82,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             IntentHelper.goToLeakActivity(this);
-        } else if (id == R.id.nav_gallery) {
-
         } else if (id == R.id.nav_slideshow) {
             IntentHelper.goToLeakObject(this);
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

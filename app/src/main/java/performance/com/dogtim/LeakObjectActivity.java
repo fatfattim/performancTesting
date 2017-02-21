@@ -8,7 +8,6 @@ public class LeakObjectActivity extends AppCompatActivity {
     private DeadPool deadPool;
     private boolean enableRelease = false;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +27,5 @@ public class LeakObjectActivity extends AppCompatActivity {
         if(enableRelease) {
             deadPool = null;
         }
-
     }
 }
