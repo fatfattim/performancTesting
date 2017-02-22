@@ -1,24 +1,17 @@
 package performance.com.dogtim;
 
-import android.content.Context;
 import android.os.Handler;
-import android.util.Log;
 
-public class ObjectUseContext {
-    private Context context;
+public class AnonymousObject {
 
     private Handler handler;
     private Runnable runnable;
 
-    public ObjectUseContext(final Context context) {
-        this.context = context;
+    public AnonymousObject() {
         this.handler = new Handler();
         this.runnable = new Runnable() {
             @Override
             public void run() {
-                if (context == null) {
-                    Log.d("dogtim", "context is null");
-                }
                 handler.postDelayed(this, 500);
             }
         };
